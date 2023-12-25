@@ -1,0 +1,16 @@
+.logout {
+  margin-top: 10px;
+  margin-left: 15px; /* Add margin-right for spacing */
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  height: 38px; /* Set the same height as the Settings button */
+  box-sizing: border-box; /* Include padding in the total height */
+}
+
+.logout:hover {
+  background-color: #c0392b;
+}

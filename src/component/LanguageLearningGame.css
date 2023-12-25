@@ -1,0 +1,182 @@
+/* LanguageLearningGame.css */
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.language-learning-game {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center; /* Centering h1 */
+  margin: 0 auto; /* Centering the container */
+}
+
+h1 {
+  color: #333;
+}
+
+/* Button Styles */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  margin-bottom: 10px; 
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Quiz Container Styles */
+.quiz-container {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.options-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Result Container Styles */
+.result-container {
+  margin-top: 20px;
+}
+
+/* Leaderboard Styles */
+.leaderboard-container {
+  margin-top: 20px;
+}
+
+.leaderboard-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.leaderboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.leaderboard-item:hover {
+  background-color: #e0e0e0;
+}
+
+.leaderboard-name {
+  flex: 1;
+  font-weight: bold;
+}
+
+.leaderboard-score {
+  margin-left: 20px;
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #777;
+}
+
+/* Responsive Styles */
+/* Mobile styles (up to 767px) */
+@media only screen and (max-width: 767px) {
+  .language-learning-game {
+    padding: 10px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .leaderboard-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .leaderboard-score {
+    margin-left: 0;
+    margin-top: 10px;
+  } 
+
+  .options-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet styles (768px to 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .language-learning-game {
+    font-size: 16px;
+  }
+
+  .leaderboard-container {
+    font-size: 16px;
+  }
+
+  .button-container {
+    flex-direction: row;
+  }
+}
+
+/* Desktop styles (1024px and above) */
+@media only screen and (min-width: 1024px) {
+  .language-learning-game {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .button-container {
+    margin-right: 20px;
+  }
+}
